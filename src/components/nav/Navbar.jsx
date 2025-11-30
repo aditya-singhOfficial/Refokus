@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "../reusable/Button";
-
 const Navbar = () => {
   return (
     <div className="max-w-5xl m-auto py-4 px-2  border-b border-zinc-700 flex justify-between">
