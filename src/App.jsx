@@ -5,6 +5,7 @@ import Stripes from "./components/stripess/Stripes.jsx";
 import Products from "./components/products/Products.jsx";
 import Marquess from "./components/marque/Marquess.jsx";
 import Cards from "./components/cards/cards.jsx";
+import Footer from "./components/footer/Footer.jsx";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Products />
       <Marquess />
       <Cards />
+      <Footer />
     </div>
   );
 };
