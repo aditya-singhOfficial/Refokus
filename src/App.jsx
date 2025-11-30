@@ -4,7 +4,7 @@ import Work from "./components/hero/Work.jsx";
 import Stripes from "./components/stripess/Stripes.jsx";
 import Products from "./components/products/Products.jsx";
 import Marquess from "./components/marque/Marquess.jsx";
-import Cards from "./components/cards/cards.jsx";
+import Cards from "./components/cards/Cards.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import FooterLinks from "./components/footerLinks/FooterLinks.jsx";
 
