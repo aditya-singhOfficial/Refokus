@@ -6,6 +6,7 @@ import Products from "./components/products/Products.jsx";
 import Marquess from "./components/marque/Marquess.jsx";
 import Cards from "./components/cards/cards.jsx";
 import Footer from "./components/footer/Footer.jsx";
+import FooterLinks from "./components/footerLinks/FooterLinks.jsx";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Marquess />
       <Cards />
       <Footer />
+      <FooterLinks />
     </div>
   );
 };
