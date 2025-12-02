@@ -29,8 +29,11 @@ const Marquess = () => {
   ];
   return (
     <div className="py-20 mt-16">
-      {images.map((imagesURL) => (
-        <Marque imagesURL={imagesURL} />
+      {images.map((imagesURL,index) => (
+        <Marque
+          imagesURL={imagesURL}
+          direction={index === 0 ? "left" : "right"}
+        />
       ))}
     </div>
   );

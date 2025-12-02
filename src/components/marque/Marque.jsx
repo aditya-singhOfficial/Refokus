@@ -1,15 +1,33 @@
+import { motion } from "motion/react";
 import React from "react";
 
-const Marque = ({ imagesURL }) => {
+const Marque = ({ imagesURL, direction }) => {
   return (
-    <div className="flex whitespace-nowrap overflow-hidden gap-10 mt-5">
-      {imagesURL.map((url, index) => (
-        <img key={index} src={url} alt="logo" className="w-32 shrink-0"/>
-      ))}
-      {imagesURL.map((url, index) => (
-        <img key={index} src={url} alt="logo" className="w-32 shrink-0"/>
-      ))}
-    </div>
+    <>
+      <div className="flex w-full overflow-hidden">
+        <motion.div
+          initial={{ x: direction === "left" ? "0" : "-100%" }}
+          animate={{ x: direction === "left" ? "-100%" : "0" }}
+          transition={{ ease: "linear", duration: 20, repeat: Infinity }}
+          className="flex shrink-0 gap-20 py-8 pr-24"
+        >
+          {imagesURL.map((url, index) => (
+            <img key={index} src={url} className="w-[8vw]" />
+          ))}
+        </motion.div>
+
+        <motion.div
+          initial={{ x: direction === "left" ? "0" : "-100%" }}
+          animate={{ x: direction === "left" ? "-100%" : "0" }}
+          transition={{ ease: "linear", duration: 20, repeat: Infinity }}
+          className="flex shrink-0 gap-20 py-8 pr-24"
+        >
+          {imagesURL.map((url, index) => (
+            <img key={index} src={url} className="w-[8vw]" />
+          ))}
+        </motion.div>
+      </div>
+    </>
   );
 };
 
