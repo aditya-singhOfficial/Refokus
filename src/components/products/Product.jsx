@@ -1,9 +1,12 @@
 import React from "react";
 import Button from "../reusable/Button";
 
-const Product = ({ value }) => {
+const Product = ({ value, changePosition, index }) => {
   return (
-    <div className="w-5xl py-20 m-auto  flex justify-between items-center">
+    <div
+      onMouseEnter={() => changePosition(index)}
+      className="w-5xl h-80 py-20 m-auto  flex justify-between items-center"
+    >
       <h1 className="text-3xl font-medium">{value.title}</h1>
       <div className="w-1/3 ">
         <p>{value.description}</p>
