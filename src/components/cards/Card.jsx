@@ -7,7 +7,7 @@ const Card = ({ width, hover, header, title, para, start }) => {
       whileHover={{ padding: "12px" }}
       className={`${width} ${
         hover ? " hover:bg-violet-500" : " hover:bg-zinc-400"
-      } bg-zinc-500 rounded-md p-2 flex flex-col justify-between h-[50vh] lg:h-[60vh]`}
+      } bg-zinc-500 rounded-md p-2 flex flex-col justify-between h-[40vh] lg:h-[60vh]`}
     >
       <div className="flex flex-col gap-2 lg:gap-3">
         <div className="flex items-center justify-between">
