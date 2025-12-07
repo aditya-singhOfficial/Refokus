@@ -9,10 +9,10 @@ const Marque = ({ imagesURL, direction }) => {
           initial={{ x: direction === "left" ? "0" : "-100%" }}
           animate={{ x: direction === "left" ? "-100%" : "0" }}
           transition={{ ease: "linear", duration: 20, repeat: Infinity }}
-          className="flex shrink-0 gap-20 py-8 pr-24"
+          className="flex shrink-0 gap-5 lg:gap-20 py-8 pr-16 lg:pr-24"
         >
           {imagesURL.map((url, index) => (
-            <img key={index} src={url} className="w-[8vw]" />
+            <img key={index} src={url} className="w-[25vw] lg:w-[8vw]" />
           ))}
         </motion.div>
 
@@ -20,10 +20,10 @@ const Marque = ({ imagesURL, direction }) => {
           initial={{ x: direction === "left" ? "0" : "-100%" }}
           animate={{ x: direction === "left" ? "-100%" : "0" }}
           transition={{ ease: "linear", duration: 20, repeat: Infinity }}
-          className="flex shrink-0 gap-20 py-8 pr-24"
+          className="flex shrink-0 gap-5 lg:gap-20 py-8 pr-16 lg:pr-24"
         >
           {imagesURL.map((url, index) => (
-            <img key={index} src={url} className="w-[8vw]" />
+            <img key={index} src={url} className="w-[25vw] lg:w-[8vw]" />
           ))}
         </motion.div>
       </div>

@@ -76,7 +76,7 @@ const Work = () => {
     }
   });
   return (
-    <div className="w-full mt-6">
+    <div className="w-full min-h-[60vh] mt-6 flex justify-center items-center">
       <div className="relative max-w-5xl m-auto text-center">
         <h1 className="text-[32vw] leading-none font-medium tracking-tight">
           work

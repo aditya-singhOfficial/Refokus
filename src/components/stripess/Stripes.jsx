@@ -29,7 +29,7 @@ const Stripes = () => {
     },
   ];
   return (
-    <div className="w-full flex mt-10">
+    <div className="w-full flex flex-wrap mt-5 lg:mt-10">
       {data.map((item, index) => (
         <Stripe value={item} />
       ))}

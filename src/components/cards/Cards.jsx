@@ -3,7 +3,7 @@ import Card from "./Card";
 
 const Cards = () => {
   return (
-    <div className="w-full mt-10">
+    <div className="w-full mt-5 lg:mt-10">
       <div className="max-w-5xl m-auto p-2 flex gap-2">
         <Card
           width={"basis-2/5"}

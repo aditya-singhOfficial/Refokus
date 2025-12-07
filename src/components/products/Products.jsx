@@ -46,11 +46,11 @@ const Products = () => {
   };
 
   return (
-    <div className="w-full mt-10 relative">
+    <div className="w-full mt-5 lg:mt-10 relative">
       {products.map((item, index) => (
         <Product value={item} changePosition={changePosition} index={index} />
       ))}
-      <div className="h-full w-full absolute top-0 pointer-events-none">
+      <div className="h-full w-full hidden lg:flex absolute top-0 pointer-events-none">
         <motion.div
           initial={{ y: position + `rem` }}
           animate={{ y: position + `rem` }}
